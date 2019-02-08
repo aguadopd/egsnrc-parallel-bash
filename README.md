@@ -5,9 +5,17 @@ You can run EGSnrc codes "in parallel" on a multi-core system without any queuin
 
 Original by [Frederic Tessier](https://github.com/ftessier) , I just added a sleep command that helped me to reduce race conditions on the lock file.
 
+## Usage
+```
+parallel <n> <command>
+#  n: number of jobs
+#  command: EGSnrc command you want to run in parallel
+#  ex: ./parallel 4 dosrznrc -i dosrznrc_template -p 521icru
+```
+
 ---------
 
-Just saving here because of Google+ shutdown. [Original conversation in the EGSnrc community](https://plus.google.com/+FredericTessierPlus/posts/hRS9Rjztsy3):
+Just saving here because of Google+ shutdown. [Original conversation in the EGSnrc community (partial)](https://plus.google.com/+FredericTessierPlus/posts/hRS9Rjztsy3):
 
 **ftessier**: Running EGSnrc codes on multiple cores without a queuing system.
 
